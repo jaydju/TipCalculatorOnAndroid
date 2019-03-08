@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical" >
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_marginTop = "16dp"
+        style = "@style/LayoutStyle"
+        android:textSize = "18sp"
+        android:hint = "Amount"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/tax_percentage"
+        style = "@style/LayoutStyle"
+        android:textSize = "18sp"
+        android:hint = "Tax Percentage"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id = "@+id/tip_percentage"
+        android:hint = "Tip Percentage"
+        style = "@style/LayoutStyle"
+        android:textSize = "18sp"
+        android:inputType="textMultiLine" />
+    <Button
+        style = "@style/LayoutStyle"
+        android:text = "Submit"
+        android:textAllCaps="true"
+        android:padding = "8dp"
+        android:textSize = "16sp"
+        android:layout_gravity="center"
+        android:onClick = "submitClick"/>
+
+</LinearLayout>
